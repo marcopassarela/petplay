@@ -361,3 +361,26 @@
     border-radius: 5px;
     border: 1px solid;
 }
+
+@media screen and (max-width: 667px) {
+    .pet h2{
+        font-size: 25px;
+        margin-left: 15px;
+        margin-top: 60px;
+    }
+    .pet p{
+        font-size: 15px;
+        width: 70%;
+        margin-left: 15px;
+    }
+    .pet .btn1{
+        margin-left: 15px;
+        font-size: 15px;
+        width: 150px;
+    }
+    .pet .btn2 a{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+      
+}
