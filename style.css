@@ -364,7 +364,7 @@
 
 /*@media screen, todos abaixo */
 
-@media screen and (min-width: 375px) and (max-width: 820px) {
+@media screen and (max-width: 375px){
     .pet h2{
         font-size: 27px;
         margin-left: 15px;
@@ -457,8 +457,10 @@
 
 }
 
-
-@media screen and (min-width: 820px) and (max-width: 1290px) {
+@media screen and (max-width: 430px){
+    #container{
+        height: 30vh;
+    }
     .pet h2{
         font-size: 27px;
         margin-left: 15px;
