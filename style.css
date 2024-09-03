@@ -382,5 +382,18 @@
         font-size: 17px;
         margin-left: 10px;
     }
+    #img{
+        width: 100%;
+        height: 400px;
+    }
+    #sobre-pet .title1{
+        font-size: 27px;
+        margin-left: 15px;
+    }
+    #sobre-pet p{
+        font-size: 17px;
+        width: 70%;
+        margin-left: 15px;
+    }
       
 }
