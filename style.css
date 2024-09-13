@@ -50,7 +50,7 @@
 .hamburger-menu {
     display: none;
     position: absolute;
-    top: 8vh;
+    top: 3vh;
     right: 10px;
     background: #FFAB49;
     border-radius: 5px;
@@ -368,7 +368,7 @@
     .pet h2{
         font-size: 27px;
         margin-left: 15px;
-        margin-top: 60px;
+        margin-top: 20px;
     }
     .pet p{
         font-size: 17px;
@@ -457,10 +457,13 @@
 }
 
 @media screen and (min-width: 376px) and (max-width: 430px){
+    #container{
+        height: 30vh;
+    }
     .pet h2{
         font-size: 27px;
         margin-left: 15px;
-        margin-top: 60px;
+        margin-top: 20px;
     }
     .pet p{
         font-size: 17px;
