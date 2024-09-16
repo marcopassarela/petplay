@@ -42,9 +42,120 @@
     font-family: "Mukta", sans-serif;
     border-radius: 10px;
 }
+
+
 #menu ul li a:hover {
-    color: #FFAB49;
+    color: #ffffff;
 }
+
+/* Estilos para o menu */
+#menu {
+    position: relative;
+    padding: 10px;
+    background-color: #FFAB49;
+}
+
+#menu img {
+    max-height: 40px;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Estilo para o botão de login e área de usuário */
+#login-button, #logout-button {
+    margin-left: 20px;
+    background-color: rgb(0, 128, 0);
+    width: 70px;
+    color: white;
+    border: 1px solid #ddd;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#login-button:hover{
+    background-color: rgb(1, 104, 1);
+}
+#logout-button:hover{
+    background-color: rgb(1, 104, 1);
+}
+
+#login-form {
+    position: absolute;
+    top: 30px; /* Ajuste a posição conforme necessário */
+    right: 190px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garantir que o formulário fique sobre o menu */
+}
+
+#login-form.hidden {
+    display: none;
+}
+.hidden{
+    display: none;
+}
+#login-form{
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.541);
+}
+
+#login-form input, #login-form button {
+    display: block;
+    margin-bottom: 10px;
+}
+#login-form input{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+}
+#login-form button{
+    background-color: rgb(0, 128, 0);
+    color: white;
+    border: 1px solid #ddd;
+    width: 120px;
+    height: 3vh;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+#login-form button:hover{
+    background-color: rgb(1, 104, 1);
+}
+
+#user-info {
+    display: flex;
+    align-items: center;
+}
+
+#user-info.hidden {
+    display: none;
+}
+
+#user-info span {
+    margin-right: 10px;
+}
+
 
 /* Estilos do Menu Hamburger */
 .hamburger-menu {
@@ -96,6 +207,7 @@
 .hamburger-nav a:hover {
     color: #fcaf58;
 }
+
 
 @media (max-width: 768px) {
     #menu {
