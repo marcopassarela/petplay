@@ -19,7 +19,11 @@
 }
 #menu span img{
     display: flex;
-    justify-content: center
+    justify-content: center;
+}
+#menu img{
+    width: 80px;
+    height: 80px;
 }
 
 #menu a{
@@ -53,10 +57,6 @@
     position: relative;
     padding: 10px;
     background-color: #FFAB49;
-}
-
-#menu img {
-    max-height: 40px;
 }
 
 #menu ul {
@@ -284,7 +284,7 @@
 
 .img-pdf img{
     float: right;
-    margin-right: 10vw;
+    margin-right: 200px;
     width: 350px;
     height: 350px;
     display: flex;
