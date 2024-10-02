@@ -19,18 +19,23 @@ function closeLoginForm() {
     document.getElementById('login-form').classList.add('hidden');
 }
 
+// Função para capitalizar a primeira letra
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+
 // Função para realizar o login
 function login() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
     if (users[username] && users[username] === password) {
-        document.getElementById('user-name').textContent = username;
+        document.getElementById('user-name').textContent = capitalizeFirstLetter(username);
         document.getElementById('user-info').classList.remove('hidden');
         document.getElementById('login-button').classList.add('hidden');
-        document.getElementById('logout-button').classList.remove('hidden'); // Exibe o botão de logout
+        document.getElementById('logout-button').classList.remove('hidden'); 
         closeLoginForm();
-        localStorage.setItem('loggedInUser', username); // Salva o usuário logado
+        localStorage.setItem('loggedInUser', username); 
     } else {
         alert('Usuário ou senha incorretos!');
     }
@@ -39,17 +44,17 @@ function login() {
 // Função para realizar o logout
 function logout() {
     document.getElementById('user-info').classList.add('hidden');
-    document.getElementById('login-button').classList.remove('hidden'); // Exibe o botão de login
-    document.getElementById('logout-button').classList.add('hidden'); // Oculta o botão de logout
-    localStorage.removeItem('loggedInUser'); // Remove o usuário logado
-    document.getElementById('username').value = ''; // Limpa o campo de usuário
-    document.getElementById('password').value = ''; // Limpa o campo de senha
+    document.getElementById('login-button').classList.remove('hidden'); 
+    document.getElementById('logout-button').classList.add('hidden'); 
+    localStorage.removeItem('loggedInUser'); 
+    document.getElementById('username').value = ''; 
+    document.getElementById('password').value = ''; 
 }
 
 // Função para ativar o login ao pressionar Enter
 function handleKeyDown(event) {
     if (event.key === 'Enter') {
-        event.preventDefault(); // Evita a ação padrão do Enter
+        event.preventDefault(); 
         login();
     }
 }
@@ -69,22 +74,26 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('user-name').textContent = loggedInUser;
         document.getElementById('user-info').classList.remove('hidden');
         document.getElementById('login-button').classList.add('hidden');
-        document.getElementById('logout-button').classList.remove('hidden'); // Garante que o botão de logout apareça
+        document.getElementById('logout-button').classList.remove('hidden');
     } else {
         document.getElementById('login-button').classList.remove('hidden');
         document.getElementById('logout-button').classList.add('hidden');
     }
 });
 
-// Deslocamento suave do menu!
+// Ajusta a rolagem suave para levar em conta a altura do cabeçalho fixo
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      e.preventDefault();
+        e.preventDefault();
 
-      const target = document.querySelector(this.getAttribute('href'));
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+        const target = document.querySelector(this.getAttribute('href'));
+        const headerOffset = document.querySelector('#menu').offsetHeight;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
     });
-  });
+});
