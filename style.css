@@ -4,8 +4,8 @@
    font-family: "Mukta", sans-serif;
 }
 
-#menu{
-    width: 100%w;
+#menu {
+    width: 100%;
     height: 8vh;
     justify-content: center;
     display: flex;
@@ -17,13 +17,14 @@
     top: 0;
     border-bottom: 1px solid rgb(66, 66, 66);
 }
+
 #menu span img{
     display: flex;
     justify-content: center;
 }
 #menu img{
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
 }
 #img img{
     width: 1500px; 
@@ -54,13 +55,6 @@
 
 #menu ul li a:hover {
     color: #ffffff;
-}
-
-/* Estilos para o menu */
-#menu {
-    position: relative;
-    padding: 10px;
-    background-color: #FFAB49;
 }
 
 #menu ul {
