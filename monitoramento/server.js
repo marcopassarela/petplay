@@ -1,11 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 const axios = require('axios');
-const cors = require('cors'); // Importa o pacote cors
 
 const app = express();
 const port = 3000;
 
-// Habilita o CORS
+// Habilitar CORS
 app.use(cors());
 
 // Lista de serviços a serem monitorados
