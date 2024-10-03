@@ -1,26 +1,21 @@
+// server.js
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const port = process.env.PORT || 3000; // Usar a porta definida no ambiente ou 3000 por padrão
 
-// Use a variável de ambiente PORT ou 3000 como fallback
-const port = process.env.PORT || 3000;
+app.use(cors()); // Permite requisições de qualquer origem
 
-app.use(cors()); // Isso permite requisições de qualquer origem.
-
+// Endpoint para checar os status
 app.get('/status', (req, res) => {
-    // Aqui deve estar a lógica para checar os status e retornar um JSON
+    // Aqui você pode adicionar lógica para verificar o status real de seus serviços
     res.json({
-        'Meu Site': 'Online',
-        'API Externa': 'Online'
+        'Meu Site': 'Online', // Você pode mudar isso para lógica real
+        'API Externa': 'Online' // Você pode mudar isso para lógica real
     });
 });
 
-// Para Vercel, usamos a função "listen" somente no desenvolvimento local
-if (require.main === module) {
-    app.listen(port, () => {
-        console.log(`Servidor rodando na porta ${port}`);
-    });
-}
-
-// Exporta a aplicação para o Vercel
-module.exports = app;
+// Inicia o servidor
+app.listen(port, () => {
+    console.log(`Servidor rodando na porta ${port}`);
+});
