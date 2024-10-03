@@ -7,7 +7,7 @@ const services = {
 async function getStatus() {
     try {
         // Altere aqui para a URL do seu servidor
-        const response = await fetch('http://<seu-ip-público>:3000/status'); // Substitua <seu-ip-público> pelo IP ou domínio do seu servidor
+        const response = await fetch('http://131.255.205.218:3000/status'); // Substitua <seu-ip-público> pelo IP ou domínio do seu servidor
 
         // Verifica se a resposta é bem-sucedida (status 200)
         if (response.ok) {
