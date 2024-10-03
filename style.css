@@ -1,7 +1,9 @@
 *{
-   padding: 0;
-   margin: 0; 
-   font-family: "Mukta", sans-serif;
+    padding: 0;
+    margin: 0; 
+    font-family: "Mukta", sans-serif;
+    -webkit-font-smoothing: antialiased; /* Suaviza as letras */
+    -moz-osx-font-smoothing: grayscale;  /* Suaviza em sistemas operacionais macOS */
 }
 
 #menu {
