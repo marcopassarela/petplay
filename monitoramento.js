@@ -1,4 +1,2 @@
-const services = {
-    'Meu Site': 'https://petplay-rho.vercel.app/', // URL do seu site na Vercel
-    'API Externa': 'https://petplay-rho.vercel.app/status', // URL do status da API na Vercel
-};
+// Este arquivo pode ser usado para monitoramento adicional se necessário
+// Como você já possui a lógica no status.js, você pode adicionar outras funções aqui

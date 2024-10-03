@@ -1,6 +1,6 @@
 const services = {
-    'Meu Site': 'http://127.0.0.1:3000/status', // URL do status do servidor local
-    'API Externa': 'https://petplay-rho.vercel.app/status', // URL do status na Vercel
+    'Meu Site': 'https://petplay-rho.vercel.app/', // URL do seu site na Vercel
+    'API Externa': 'https://petplay-rho.vercel.app/status', // URL do status da API na Vercel
 };
 
 async function getStatus() {
@@ -48,3 +48,21 @@ window.onload = () => {
     getStatus(); // Chama uma vez ao carregar a página
     setInterval(getStatus, 5000); // Chama a função a cada 5 segundos
 };
+
+async function getStatus() {
+    try {
+        const response = await fetch(services['API Externa']);
+        console.log('Response:', response); // Log da resposta para ver o que está retornando
+        
+        if (response.ok) {
+            const data = await response.json();
+            updateStatusDisplay(data);
+        } else {
+            console.error('Erro na resposta da API:', response.status);
+            updateStatusToOffline();
+        }
+    } catch (error) {
+        console.error('Erro ao obter status:', error);
+        updateStatusToOffline();
+    }
+}
