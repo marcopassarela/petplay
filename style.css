@@ -695,8 +695,12 @@
         margin-left: 10px;
     }
     #img {
-        width: 90%;
-        height: 400px;
+        width: 100%;
+    }
+    #img img{
+        width: 410px;
+        height: 210px;
+        border-radius: 10px;
     }
     #sobre-pet .title1,
     #sobre-pet .title2,
