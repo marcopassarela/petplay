@@ -1,12 +1,12 @@
 // Lista de serviços a serem monitorados
 const services = {
-    'Meu Site': 'https://seusite.com',
-    'API Externa': 'https://api.externa.com',
+    'Meu Site': 'https://petplay-rho.vercel.app/', // URL do seu site na Vercel
+    'API Externa': 'https://petplay-rho.vercel.app/status', // URL do status da API na Vercel
 };
 
 async function getStatus() {
     try {
-        const response = await fetch('http://localhost:3000/status');
+        const response = await fetch(services['API Externa']); // Mude para a URL do serviço
 
         // Verifica se a resposta é bem-sucedida (status 200)
         if (response.ok) {
