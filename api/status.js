@@ -2,7 +2,7 @@
 
 const services = {
     'Meu Site': 'https://petplay-rho.vercel.app/', // URL do seu site na Vercel
-    'API Externa': 'http://localhost:3000/status', // URL do status da API localmente
+    'API Externa': 'https://petplay-rho.vercel.app//status', // URL do status da API localmente
 };
 
 async function getStatus() {
