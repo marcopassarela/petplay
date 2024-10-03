@@ -6,7 +6,8 @@ const services = {
 
 async function getStatus() {
     try {
-        const response = await fetch(services['API Externa']); // Mude para a URL do serviço
+        // Faz a requisição para o status da API externa
+        const response = await fetch(services['API Externa']);
 
         // Verifica se a resposta é bem-sucedida (status 200)
         if (response.ok) {
