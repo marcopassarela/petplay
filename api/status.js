@@ -1,20 +1,21 @@
-// Lista de serviços a serem monitorados
+// status.js
+
 const services = {
     'Meu Site': 'https://petplay-rho.vercel.app/', // URL do seu site na Vercel
-    'API Externa': 'https://petplay-rho.vercel.app/status', // URL do status da API na Vercel
+    'API Externa': 'http://localhost:3000/status', // URL do status da API localmente
 };
 
 async function getStatus() {
     try {
         // Faz a requisição para o status da API externa
         const response = await fetch(services['API Externa']);
-
+        
         // Verifica se a resposta é bem-sucedida (status 200)
         if (response.ok) {
             const data = await response.json();
             updateStatusDisplay(data);
         } else {
-            // Se a resposta não for bem-sucedida, atualiza para offline
+            console.error('Erro na resposta da API:', response.status);
             updateStatusToOffline();
         }
     } catch (error) {
