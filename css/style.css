@@ -5,6 +5,9 @@
     -webkit-font-smoothing: antialiased; /* Suaviza as letras */
     -moz-osx-font-smoothing: grayscale;  /* Suaviza em sistemas operacionais macOS */
 }
+:root{
+    --color-blue: #0969da;
+}
 
 #menu {
     width: 100%;
@@ -561,13 +564,13 @@
 
     a{
         text-decoration: none;
-        color: black;
+        color: rgba(0, 0, 0, 0.733);
         list-style: none;
         font-size: 12px;
     }
     a:hover{
         text-decoration: underline;
-        color: blue;
+        color: var(--color-blue);
     }
 }
 
