@@ -1,13 +1,14 @@
 const express = require('express');
-const cors = require('cors'); // Certifique-se de que esta linha está presente
 const axios = require('axios');
+const cors = require('cors'); // Importa o pacote cors
 
 const app = express();
 const port = 3000;
 
-// Usar CORS
-app.use(cors()); // Certifique-se de que esta linha está presente
+// Habilita o CORS
+app.use(cors());
 
+// Lista de serviços a serem monitorados
 const services = {
     'Meu Site': 'https://seusite.com',
     'API Externa': 'https://api.externa.com',
