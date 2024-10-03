@@ -554,6 +554,11 @@
     align-items: center;
     text-align: center;
 
+    li{
+        font-size: 12px;
+        list-style: none;
+    }
+
     a{
         text-decoration: none;
         color: black;
