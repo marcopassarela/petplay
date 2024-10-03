@@ -42,8 +42,8 @@ function updateStatusToOffline() {
     }
 }
 
-// Chama a função inicialmente e depois a cada 1 segundo (1000 milissegundos)
+// Chama a função inicialmente e depois a cada 5 segundos (5000 milissegundos)
 window.onload = () => {
     getStatus(); // Chama uma vez ao carregar a página
-    setInterval(getStatus, 1000); // Chama a função a cada 1 segundo
+    setInterval(getStatus, 5000); // Chama a função a cada 5 segundos
 };
