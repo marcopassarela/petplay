@@ -1,8 +1,6 @@
-// status.js
-
 const services = {
-    'Meu Site': 'https://petplay-rho.vercel.app/', // URL do seu site na Vercel
-    'API Externa': 'https://petplay-rho.vercel.app//status', // URL do status da API localmente
+    'Meu Site': 'http://127.0.0.1:3000/status', // URL do status do servidor local
+    'API Externa': 'https://petplay-rho.vercel.app/status', // URL do status na Vercel
 };
 
 async function getStatus() {
@@ -45,8 +43,8 @@ function updateStatusToOffline() {
     }
 }
 
-// Chama a função inicialmente e depois a cada 1 segundo (1000 milissegundos)
+// Chama a função inicialmente e depois a cada 5 segundos (5000 milissegundos)
 window.onload = () => {
     getStatus(); // Chama uma vez ao carregar a página
-    setInterval(getStatus, 1000); // Chama a função a cada 1 segundo
+    setInterval(getStatus, 5000); // Chama a função a cada 5 segundos
 };
