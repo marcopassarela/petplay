@@ -98,9 +98,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-<script>
 function toggleMenu() {
     const menu = document.getElementById('privacy');
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 }
-</script>
+
