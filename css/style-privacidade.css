@@ -91,3 +91,35 @@
 }
 
 
+@media screen and (max-width: 430px) { /* Ajuste a largura conforme necessário */
+    #privacy {
+        display: none; /* Esconde o menu por padrão em telas pequenas */
+        position: absolute;
+        top: 50px; /* Ajuste conforme necessário */
+        left: 0;
+        background-color: white; /* Cor de fundo do menu */
+        border: 1px solid #ccc; /* Borda do menu */
+        z-index: 1000; /* Para aparecer acima de outros elementos */
+        width: 200px; /* Largura do menu */
+    }
+
+    #hamburger {
+        display: block; /* Mostra o botão hamburger */
+    }
+
+    #hamburger.hidden {
+        display: none; /* Esconde o botão quando o menu está visível */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #hamburger {
+        display: none; /* Esconde o botão hamburger em telas grandes */
+    }
+
+    #privacy {
+        display: block; /* Mostra o menu normalmente em telas grandes */
+        position: static; /* Reseta a posição do menu */
+        border: none; /* Remove a borda */
+    }
+}
