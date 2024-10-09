@@ -97,9 +97,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-function toggleMenu() {
-    const menu = document.getElementById('privacy');
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-}
-
