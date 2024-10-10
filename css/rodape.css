@@ -267,3 +267,38 @@
         color: var(--color-blue);
     }
 }
+
+#download {
+    width: 30%;
+    height: 65vh;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 140px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px 10px rgba(0, 0, 0, .1), 0 4px 20px 10px rgba(0, 0, 0, .1);
+}
+
+#download:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #download {
+        width: 85%;
+    }
+
+    #privacy2{
+        margin-bottom: 10px;
+        gap: 20px;
+    }
+
+    #privacy2 .termos2 {
+        gap: 20px;
+    }
+
+    #privacy2 .img {
+        margin-top: -1px;
+    }
+}
