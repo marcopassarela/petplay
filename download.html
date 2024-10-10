@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPlay</title>
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="icon" sizes="64x64" href="/assets/img/logo-ofc.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menu">
+        <span><a href="index.html"><img src="assets/img/logo-ofc.png" alt="logo-wallpaper"></span></a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#sobre-pet">Dicas</a></li>
+            <li><a href="#title-sobre-site">Desperte a Alegria</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+        </ul>
+        <div id="user-info" class="hidden">
+            <span id="user-name"></span>
+            <button id="logout-button">Logout</button>
+        </div>
+        <button id="login-button">Login</button>
+
+        <!-- Formulário de login -->
+        <div id="login-form" class="hidden">
+            <h3>Login</h3>
+            <input type="text" id="username" placeholder="Usuário">
+            <input type="password" id="password" placeholder="Senha">
+            <button onclick="login()">Entrar</button>
+            <button onclick="closeLoginForm()">Cancelar</button>
+        </div>
+    </div>
+    
+    <!-- Menu Hamburger -->
+    <div class="hamburger-menu">
+        <div class="hamburger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="hamburger-nav">
+            <li><a href="#container">Inicio</a></li>
+            <li><a href="#sobre-pet">Dicas</a></li>
+            <li><a href="#title-sobre-site">Desperte a <br>Alegria</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </div>
+
+    
+
+     <div id="privacy2">
+        <img src="assets/img/logo-ofc.png" alt="logo-ofc"  class="img">
+        <div class="termos2">
+            <li>© 2024 PetPlay, Inc</li>
+            <a href="docs/termos.html" target="_blank"><li>Termos</li></a>
+            <a href="docs/privacida.html" target="_blank"><li>Privacidade</li></a>
+        </div>
+     </div>
+
+<script src="scripts/script.js" defer></script>
+</body>
+</html>
