@@ -79,6 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('login-button').classList.remove('hidden');
         document.getElementById('logout-button').classList.add('hidden');
     }
+
+    // Fecha o menu ao clicar em um item do menu
+    document.querySelectorAll('.hamburger-nav a').forEach(item => {
+        item.addEventListener('click', () => {
+            hamburgerNav.classList.remove('active'); // Fecha o menu
+        });
+    });
 });
 
 // Ajusta a rolagem suave para levar em conta a altura do cabeçalho fixo
@@ -97,4 +104,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
