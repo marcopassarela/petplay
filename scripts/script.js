@@ -3,61 +3,6 @@ const hamburgerIcon = document.querySelector('.hamburger-icon'); // Seleciona o 
 const hamburgerNav = document.querySelector('.hamburger-nav'); // Seleciona a nav do menu hamburger
 const overlay = document.querySelector('.overlay'); // Seleciona o overlay
 
-// Simulação de banco de dados de usuários
-const users = {
-    'admin': 'admin' // Nome de usuário e senha
-};
-
-// Função para exibir o formulário de login
-function showLoginForm() {
-    document.getElementById('login-form').classList.remove('hidden');
-}
-
-// Função para fechar o formulário de login
-function closeLoginForm() {
-    document.getElementById('login-form').classList.add('hidden');
-}
-
-// Função para capitalizar a primeira letra
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-}
-
-// Função para realizar o login
-function login() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    if (users[username] && users[username] === password) {
-        document.getElementById('user-name').textContent = capitalizeFirstLetter(username);
-        document.getElementById('user-info').classList.remove('hidden');
-        document.getElementById('login-button').classList.add('hidden');
-        document.getElementById('logout-button').classList.remove('hidden'); 
-        closeLoginForm();
-        localStorage.setItem('loggedInUser', username); 
-    } else {
-        alert('Usuário ou senha incorretos!');
-    }
-}
-
-// Função para realizar o logout
-function logout() {
-    document.getElementById('user-info').classList.add('hidden');
-    document.getElementById('login-button').classList.remove('hidden'); 
-    document.getElementById('logout-button').classList.add('hidden'); 
-    localStorage.removeItem('loggedInUser'); 
-    document.getElementById('username').value = ''; 
-    document.getElementById('password').value = ''; 
-}
-
-// Função para ativar o login ao pressionar Enter
-function handleKeyDown(event) {
-    if (event.key === 'Enter') {
-        event.preventDefault(); 
-        login();
-    }
-}
-
 // Função para fechar o menu hamburger
 function closeHamburgerMenu() {
     hamburgerNav.classList.remove('active');
