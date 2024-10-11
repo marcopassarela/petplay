@@ -227,6 +227,21 @@
     }
 }
 
+.overlay {
+    position: fixed; /* Fica fixo na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.74); /* Cor escura com transparência */
+    z-index: 1000; /* Fica acima do conteúdo do site, mas abaixo do menu */
+    display: none; /* Inicialmente escondido */
+}
+
+.overlay.active {
+    display: block; /* Mostra o overlay quando ativo */
+}
+
 #dicas{
     width: 100%;
     height: 40vh;

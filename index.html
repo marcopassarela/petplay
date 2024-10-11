@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetPlay</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="script.js">
     <link rel="icon" sizes="64x64" href="/assets/img/logo-ofc.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +12,7 @@
 </head>
 <body>
     <div id="menu">
-        <span><a href="index.html"><img src="assets/img/logo-ofc.png" alt="logo-wallpaper"></span></a>
+        <span><a href="index.html"><img src="assets/img/logo-ofc.png" alt="logo-wallpaper"></a></span>
         <ul>
             <li><a href="#dicas">Inicio</a></li>
             <li><a href="#sobre-pet">Dicas</a></li>
@@ -23,7 +22,7 @@
         </ul>
         <div id="user-info" class="hidden">
             <span id="user-name"></span>
-            <button id="logout-button">Logout</button>
+            <button id="logout-button" class="hidden">Logout</button>
         </div>
         <button id="login-button">Login</button>
 
@@ -37,6 +36,8 @@
         </div>
     </div>
     
+    <div class="overlay hidden"></div>
+    
     <!-- Menu Hamburger -->
     <div class="hamburger-menu">
         <div class="hamburger-icon">
@@ -44,7 +45,7 @@
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-        <ul class="hamburger-nav">
+        <ul class="hamburger-nav hidden">
             <li><a href="#inicio">Início</a></li>
             <li><a href="#dicas">Dicas</a></li>
             <li><a href="#title-sobre-site">Desperte a <br>Alegria</a></li>
@@ -53,12 +54,12 @@
         </ul>
     </div>
 
-    <!-- Dicas -->
+    <!-- Resto do conteúdo da página -->
     <div id="dicas">
         <div class="pet">
             <h2>Cuidados com seu pet.</h2>
             <p>PetPlay é uma plataforma para quem entende que cuidar de pets vai além do básico é sobre atender às necessidades e proporcionar bem-estar de forma personalizada.</p>
-            <button class="btn1"><a href="https://abinpet.org.br/wp-content/uploads/2021/04/Manual_de_Boas_Praticas_online.pdf" target="_blank">Manual para seu Pet</button></a>
+            <button class="btn1"><a href="https://abinpet.org.br/wp-content/uploads/2021/04/Manual_de_Boas_Praticas_online.pdf" target="_blank">Manual para seu Pet</a></button>
             <button class="btn2"><a href="#privacy">Contato</a></button>
         </div>
     </div>
@@ -75,7 +76,7 @@
         <p>Com diversos cuidados e brincadeiras, você pode criar um mundo perfeito para o seu pet.</p>
         <h2 class="title3">O amor pelo seu pet deve ser eterno.</h2>
         <p>Seu pet merece cuidados livres e constantes, para que o amor entre vocês seja sempre preservado.</p>
-        <button class="btn3"><a href="https://abinpet.org.br/wp-content/uploads/2021/04/Manual_de_Boas_Praticas_online.pdf" target="_blank" class="link3">Gratuito para Baixar</button></a>
+        <button class="btn3"><a href="https://abinpet.org.br/wp-content/uploads/2021/04/Manual_de_Boas_Praticas_online.pdf" target="_blank" class="link3">Gratuito para Baixar</a></button>
     </div>
 
     <div id="title-sobre-site">
@@ -147,6 +148,6 @@
         </div>
      </div>
 
-<script src="scripts/script.js" defer></script>
+<script src="/scripts/script.js"></script>
 </body>
 </html>
