@@ -154,6 +154,25 @@
     .hamburger-nav.active {
         display: block; /* Mostra o menu quando ativo */
     }
+
+    .hamburger-nav a {
+        font-size: 14px;
+        display: flex;
+    }
+
+    .hamburger-icon {
+        display: block; /* Mostra o ícone do hamburger */
+        left: 10px; /* Ajuste a distância da borda esquerda conforme necessário */
+        top: 10px; /* Ajuste a distância do topo conforme necessário */      
+    }
+
+    #privacy {
+        display: none;
+    }
+
+    #test {
+        width: 90%;
+    }
 }
 
 .overlay {
@@ -162,7 +181,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
+    background: rgba(0, 0, 0, 0.74); /* Cor escura com transparência */
     z-index: 1000; /* Fica acima do conteúdo do site, mas abaixo do menu */
     display: none; /* Inicialmente escondido */
 }
