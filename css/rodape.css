@@ -4,6 +4,7 @@
     font-family: "Mukta", sans-serif;
     -webkit-font-smoothing: antialiased; /* Suaviza as letras */
     -moz-osx-font-smoothing: grayscale;  /* Suaviza em sistemas operacionais macOS */
+    scroll-behavior: smooth;
 }
 :root{
     --color-blue: #0969da;
