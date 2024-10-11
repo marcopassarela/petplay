@@ -302,6 +302,10 @@
     text-align: justify;
 }
 
+.title a {
+    text-decoration: none;
+}
+
 .btn {
     display: flex;
     justify-content: center;
@@ -328,10 +332,10 @@
 
 /* Medias screens para mobiles e etc abaixo*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 430px) {
     #download {
         width: 80%;
-        height: 55vh;
+        height: 40vh;
         margin-top: 120px;
     }
     #download:hover {
@@ -363,5 +367,8 @@
     .btn {
         font-size: 17px;
         background-color: rgb(4, 156, 4);
+    }
+    .title a {
+        text-decoration: none;
     }
 }
