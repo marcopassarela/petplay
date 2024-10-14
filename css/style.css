@@ -557,7 +557,11 @@
     }
     #pet2 {
         width: 90%;
-        height: 40vh;
+        height: 350px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
     }
     #pet2 img {
         width: 250px;
@@ -569,18 +573,19 @@
     }
     #btn3 {
         width: 90%;
-        height: 50px;
+        height: 70px;
         display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
     }
     #btn3 button {
-        background-color: #F89422;
-        width: 150px;
+        width: 220px;
         height: 50px;
+        background-color: #FFAB49;
         border-radius: 5px;
+        border: 1px solid #FFAB49;
         font-size: 15px;
-        border: 1px solid #F89422;
-        margin: auto;
-        
     }
     #title-sobre-site {
         margin-left: 15px;
@@ -743,7 +748,7 @@
         margin-left: 15px;
         margin-bottom: 10px;
     }
-    #pet {
+    #pet2 {
         width: 90%;
         height: 350px;
         display: flex;
@@ -751,7 +756,7 @@
         justify-content: center;
         align-items: center;
     }
-    #pet .img-pdf img{
+    #pet2 img{
         width: 300px;
         height: 300px;
         display: flex;
