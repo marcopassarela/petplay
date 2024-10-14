@@ -538,16 +538,16 @@
     }
     .img-pdf img {
         position: absolute;
-        margin-top: 45vh;
-        margin-left: 65px;
+        margin-top: 250px;
+        margin-left: 50px;
     }
     #sobre-pet img {
         width: 250px;
         height: 250px;
     }
     .btn3 {
-        margin-top: 300px;
-        margin-right: 85px;
+        margin-top: 280px;
+        margin-right: 50px;
         width: 200px;
         margin-bottom: 30px;
     }
@@ -555,7 +555,7 @@
         margin-left: 15px;
     }
     #title-sobre-site h2 {
-        font-size: 27px;
+        font-size: 23px;
         top: 40%;
     }
     #title-sobre-site p {
@@ -568,11 +568,32 @@
     }
     #sobre-site .column {
         width: 100%;
+        height: 100vh;
         margin-left: 20px;
     }
-    #sobre-site, .box1, .box2, .box3, .box4 {
+    #sobre-site {
         width: 90%;
         margin-bottom: 20px;
+    }
+    .box1 {
+        width: 90%;
+        height: 500px;
+        margin-bottom: 25px;
+    }
+    .box2 {
+        width: 90%;
+        height: 500px;
+    }
+    .box3 {
+        width: 90%;
+        height: 100vh;
+        margin-bottom: 25px;
+        margin-top: 350px;
+    }
+    .box4{
+        width: 90%;
+        height: 100vh;
+        margin-bottom: 25px;
     }
     .sub-title1, .sub-title2, .sub-title3, .sub-title4 {
         font-size: 15px;
@@ -580,11 +601,38 @@
     .inner-box1, .inner-box2, .inner-box3, .inner-box4 {
         width: 80%;
     }
+    .inner-box1 p{
+        font-size: 20px;
+    }
     .inner-box1-1 {
         margin-top: -90px;
         margin-left: 15px;
         width: 70%;
+        height: 20vh;
     }
+    .inner-box1-1 p {
+        font-size: 11px;
+    }
+    #sobre {
+        width: 100%;
+        height: 350px;
+        margin-top: 900px;
+    }
+    .sobre-nos {
+        width: 90%;
+        height: 350px;
+        margin-left: 15px;
+    }
+    .sobre-nos li {
+        text-align: center;
+        line-height: 20px;
+    }
+    #privacy {
+        width: 100%;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
 }
 
 /*@media screen, Iphone XR a  Iphone 14 Pro Max*/
