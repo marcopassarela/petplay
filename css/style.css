@@ -536,37 +536,55 @@
         height: 190px;
         border-radius: 10px;
     }
-    #sobre-pet .title1,
-    #sobre-pet .title2,
-    #sobre-pet .title3 {
-        font-size: 23px;
+    #sobre-pet {
+        width: 90%;
+        height: 60vh;
+    }
+    #sobre-pet h2 {
+        width: 90%;
         margin-left: 15px;
         line-height: 25px;
-        margin-bottom: 10px;
-        width: 90%;
+        font-size: 21px;
     }
     #sobre-pet p {
         font-size: 17px;
         width: 75%;
         margin-left: 15px;
     }
-    .img-pdf img {
-        position: absolute;
-        margin-top: 250px;
-        margin-left: 50px;
-    }
     #sobre-pet img {
         width: 250px;
         height: 250px;
     }
-    .btn3 {
-        margin-top: 280px;
-        margin-right: 50px;
-        width: 200px;
-        margin-bottom: 30px;
+    #pet2 {
+        width: 90%;
+        height: 40vh;
+    }
+    #pet2 img {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+    #btn3 {
+        width: 90%;
+        height: 50px;
+        display: flex;
+    }
+    #btn3 button {
+        background-color: #F89422;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        font-size: 15px;
+        border: 1px solid #F89422;
+        margin: auto;
+        
     }
     #title-sobre-site {
         margin-left: 15px;
+        margin-top: 5px;
     }
     #title-sobre-site h2 {
         font-size: 23px;
@@ -579,11 +597,16 @@
     #sobre-site {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
     #sobre-site .column {
         width: 90%;
-        height: 100vh;
         margin-left: 20px;
+    }
+    #sobre-site .column2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
     }
     #sobre-site {
         width: 90%;
@@ -597,16 +620,16 @@
     .box2 {
         width: 90%;
         height: 500px;
+        margin-bottom: 25px;
     }
     .box3 {
         width: 90%;
-        height: 100vh;
+        height: 500px;
         margin-bottom: 25px;
-        margin-top: 350px;
     }
     .box4{
         width: 90%;
-        height: 100vh;
+        height: 500px;
         margin-bottom: 25px;
     }
     .sub-title1, .sub-title2, .sub-title3, .sub-title4 {
@@ -621,7 +644,7 @@
     .inner-box1-1 {
         margin-top: -90px;
         margin-left: 15px;
-        width: 70%;
+        width: 60%;
         height: 20vh;
     }
     .inner-box1-1 p {
@@ -641,6 +664,25 @@
         text-align: center;
         line-height: 20px;
     }
+    #description {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    #description h2{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
+    }
+
+    #description li {
+        text-align: center;
+        line-height: 20px;
+        list-style: none;
+        margin-left: 15px;
+        text-align: justify;
+    }
     #privacy {
         width: 90%;
         gap: 10px;
@@ -649,7 +691,7 @@
 
 }
 
-/*@media screen, Iphone XR a  Iphone 14 Pro Max*/
+/*@media screen, Iphone XR a Iphone 14 Pro Max*/
 @media screen and (min-width: 414px) and (max-width: 430px) {
     #dicas{
         height: 30vh;
