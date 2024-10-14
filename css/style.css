@@ -116,7 +116,7 @@
 }
 
 .hamburger-nav li {
-    padding: 6px;
+    padding: 10px;
     text-align: center;
     line-height: 25px;
 }
@@ -124,7 +124,7 @@
 .hamburger-nav a {
     text-decoration: none;
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .hamburger-nav a:hover {
