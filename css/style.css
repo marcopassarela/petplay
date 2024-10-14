@@ -686,6 +686,8 @@
     #sobre-pet .title3 {
         font-size: 27px;
         margin-left: 15px;
+        line-height: 25px;
+        margin-bottom: 10px;
     }
     #sobre-pet p {
         font-size: 17px;
@@ -755,7 +757,7 @@
     }
     .box2 {
         width: 90%;
-        height: 50vh;
+        height: 500px;
         margin-bottom: 25px;
     }
     .box3 {
