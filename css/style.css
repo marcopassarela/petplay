@@ -31,6 +31,7 @@
 #menu img{
     width: 65px;
     height: 65px;
+    border-radius: 100%;
 }
 #img img{
     width: 1500px; 
@@ -268,9 +269,14 @@
     color: white;
     text-decoration: none;
 }
-#sobre-pet .btn3:hover{
-    background-color: #F89422;
-    transition: transform 0.6s ease-in-out,
+#sobre-pet {
+    width: 100%;
+    height: 65vh;
+}
+#sobre-pet h2 {
+    margin-left: 20vw;
+    font-size: 2.5rem;
+    padding: 2px;
 }
 
 #sobre-pet .title1{
@@ -294,9 +300,34 @@
     margin-left: 20vw;
     margin-top: 2%;
 }
+#pet2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+#pet2 img {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+}
+#btn3 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+#btn3 button {
+    width: 250px;
+    height: 50px;
+    background-color: #f89422;
+    border: 1px solid #F89422;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin: auto;
+}
 
 #title-sobre-site{
-    margin-top: 10%;
     margin-left: 20vw;
     font-size: 2.5rem;
 }
@@ -341,6 +372,7 @@
 
 .box3 {
     background-color: #2A2A2A;
+    margin-top: -26px;
 }
 
 .box4 {
@@ -431,31 +463,25 @@
     border: 1px solid;
 }
 
-#sobre{
+#description{
     width: 100%;
-    height: 200px;
-    display: flex;
-    margin-bottom: 0;
+    height: 20vh;
 }
 
-.sobre-nos{
-    width: 100%;
-    height: 200px;
-
-    h2{
+#description h2 {
     display: flex;
+    margin: auto;
     justify-content: center;
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 25px;
-    }
-
-    li{
-    display: flex;
-    justify-content: center;
+}
+#description li {
+    width: 60%;
+    height: 10vh;
     list-style: none;
-    text-align: justify;
-    }
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #privacy {
@@ -469,10 +495,10 @@
     left: 0;         
 }
 
-#privacy .img {
+#privacy img {
     width: 25px;
     height: 25px;
-    margin-top: -5px;
+    border-radius: 100%;      
 }
 
 .termos{
