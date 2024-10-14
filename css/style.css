@@ -528,7 +528,7 @@
         margin-left: 10px;
     }
     #img {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
     #img img{
@@ -580,7 +580,7 @@
         flex-direction: column;
     }
     #sobre-site .column {
-        width: 100%;
+        width: 90%;
         height: 100vh;
         margin-left: 20px;
     }
@@ -627,7 +627,7 @@
         font-size: 11px;
     }
     #sobre {
-        width: 100%;
+        width: 90%;
         height: 350px;
         margin-top: 900px;
     }
@@ -641,7 +641,7 @@
         line-height: 20px;
     }
     #privacy {
-        width: 100%;
+        width: 90%;
         gap: 10px;
         margin-bottom: 15px;
     }
@@ -673,7 +673,7 @@
         margin-left: 10px;
     }
     #img {
-        width: 100%;
+        width: 90%;
     }
     #img img{
         width: 410px;
@@ -693,7 +693,7 @@
         margin-left: 15px;
     }
     #pet {
-        width: 100%;
+        width: 90%;
         height: 350px;
         display: flex;
         margin: auto;
@@ -708,7 +708,7 @@
         justify-content: center;
     }
     #btn3 {
-        width: 100%;
+        width: 90%;
         height: 70px;
         display: flex;
         margin: auto;
@@ -725,12 +725,12 @@
     }
     #title-sobre-site {
         margin-left: 15px;
-        width: 100%;
+        width: 90%;
         height: 10vh;
     }
     #title-sobre-site h2 {
         font-size: 23px;
-        width: 100%;
+        width: 90%;
     }
     #title-sobre-site p {
         font-size: 17px;
@@ -780,7 +780,7 @@
         height: 200px;
     }
     #description h2{
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: center;
         margin-left: 15px;
