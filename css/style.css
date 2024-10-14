@@ -692,43 +692,77 @@
         width: 75%;
         margin-left: 15px;
     }
-    .img-pdf img {
-        position: absolute;
-        margin-top: 45vh;
-        margin-left: 65px;
+    #pet {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
     }
-    #sobre-pet img {
-        width: 250px;
-        height: 250px;
+    #pet .img-pdf img{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
     }
-    .btn3 {
-        margin-top: 300px;
-        margin-right: 85px;
-        width: 200px;
-        margin-bottom: 30px;
+    #btn3 {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    #btn3 button {
+        width: 220px;
+        height: 50px;
+        background-color: #FFAB49;
+        border-radius: 5px;
+        border: 1px solid #FFAB49;
+        font-size: 15px;
     }
     #title-sobre-site {
         margin-left: 15px;
+        width: 100%;
+        height: 10vh;
     }
     #title-sobre-site h2 {
-        font-size: 27px;
-        top: 40%;
+        font-size: 23px;
+        width: 100%;
     }
     #title-sobre-site p {
         font-size: 17px;
         width: 75%;
     }
     #sobre-site {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    #sobre-site .column2 {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
-    #sobre-site .column {
-        width: 100%;
-        margin-left: 20px;
-    }
-    #sobre-site, .box1, .box2, .box3, .box4 {
+    .box1 {
         width: 90%;
-        margin-bottom: 20px;
+        height: 500px;
+        margin-bottom: 25px;
+    }
+    .box2 {
+        width: 90%;
+        height: 50vh;
+        margin-bottom: 25px;
+    }
+    .box3 {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+    .box4{
+        width: 90%;
     }
     .sub-title1, .sub-title2, .sub-title3, .sub-title4 {
         font-size: 15px;
@@ -741,4 +775,25 @@
         margin-left: 15px;
         width: 70%;
     }
+    #description {
+        width: 100%;
+        height: 200px;
+    }
+    #description h2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #description li {
+        text-align: center;
+        line-height: 20px;
+        list-style: none;
+    }
+    #privacy {
+        width: 100%;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
 }
