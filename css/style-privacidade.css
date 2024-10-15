@@ -149,6 +149,7 @@
 
     .hamburger-menu {
         display: block; /* Mostra o ícone do hamburger */
+        position: fixed;
     }
 
     .hamburger-nav.active {
