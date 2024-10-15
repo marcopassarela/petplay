@@ -191,5 +191,11 @@
 }
 
 @media screen and (max-width: 430px) {
-
+    #test h1 {
+        width: 80%;
+        font-size: 18px;
+    }
+    #test li {
+        width: 80%;
+    }
 }
