@@ -233,45 +233,20 @@
     border-radius: 15px;
 }
 
-.img-pdf img{
-    float: right;
-    margin-right: 200px;
-    width: 350px;
-    height: 350px;
-    display: flex;
-    margin-top: -27vh;
-    cursor: pointer;
-    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
-    border-radius: 100%;
-}
-.img-pdf img:hover {
+
+#pet2 img:hover {
     transform: scale(1.1); 
     transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
     box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.5);
 }
-.btn3{
-    float: right;
-    margin-right: 10vw;
-    width: 20%;
-    height: 6vh;
-    margin-top: -10vh;
-    font-size: 1.4rem;
-    line-height: 1.1;
-    cursor: pointer;
-    background-color: #fcaf58;
-    border-radius: 5px;
-    border: 1px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease-in-out, transform 0.6s ease-in-out;
-}
+
 .link3{
     color: white;
     text-decoration: none;
 }
 #sobre-pet {
     width: 100%;
-    height: 65vh;
+    height: 55vh;
 }
 #sobre-pet h2 {
     margin-left: 20vw;
@@ -320,11 +295,15 @@
 #btn3 button {
     width: 250px;
     height: 50px;
-    background-color: #f89422;
-    border: 1px solid #F89422;
+    background-color: #FFAB49;
+    border: 1px solid #FFAB49;
     border-radius: 10px;
     font-size: 1.5rem;
     margin: auto;
+    transition: background-color 0.3s ease-in-out, transform 0.6s ease-in-out;
+}
+#btn3 button:hover {
+    background-color: #F89422;
 }
 
 #title-sobre-site{
