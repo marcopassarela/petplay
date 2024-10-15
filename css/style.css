@@ -140,6 +140,7 @@
     
     .hamburger-menu {
         display: block;
+        position: fixed;
     }
     
     .hamburger-nav.active {
@@ -153,6 +154,7 @@
     
     .hamburger-menu {
         display: block;
+        position: fixed;
     }
     
     .hamburger-nav.active {
