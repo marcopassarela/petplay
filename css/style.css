@@ -757,6 +757,7 @@
         margin: auto;
         justify-content: center;
         align-items: center;
+        margin-top: 20px;
     }
     #pet2 img{
         width: 300px;
