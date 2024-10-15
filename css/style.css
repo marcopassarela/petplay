@@ -677,8 +677,7 @@
     }
     #description {
         width: 90%;
-        height: 200px;
-        margin-bottom: 20px;
+        height: 300px;
     }
     #description h2{
         width: 90%;
@@ -688,11 +687,8 @@
     }
 
     #description li {
-        text-align: center;
-        line-height: 20px;
-        list-style: none;
+        width: 90%;
         margin-left: 15px;
-        text-align: justify;
     }
     #privacy {
         width: 90%;
@@ -823,7 +819,9 @@
     }
     .box3 {
         width: 90%;
+        height: 500px;
         margin-bottom: 25px;
+        margin-top: 15px;
     }
     .box4{
         width: 90%;
@@ -841,7 +839,7 @@
     }
     #description {
         width: 90%;
-        height: 200px;
+        height: 300px;
     }
     #description h2{
         width: 90%;
@@ -851,11 +849,7 @@
     }
 
     #description li {
-        text-align: center;
-        line-height: 20px;
-        list-style: none;
-        margin-left: 15px;
-        text-align: justify;
+        width: 90%;
     }
     #privacy {
         width: 90%;
